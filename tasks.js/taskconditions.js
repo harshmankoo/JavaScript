@@ -203,7 +203,7 @@
 ================================ */
 // Predict output BEFORE running
 
-if (true) {
+ if (true) {
   var a = 10;
   let b = 20;
 }
