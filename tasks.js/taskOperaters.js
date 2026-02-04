@@ -1,18 +1,18 @@
 // // arithmetic operators
 
-// var a = 10;
-// var b = 5;
-// console.log("addition (+):", a + b);
+var a = 10;
+var b = 5;
+console.log("addition (+):", a + b);
 
-// console.log("subtraction (-):", a - b);
+console.log("subtraction (-):", a - b);
 
-// console.log("multiplication (*):", a * b);
+console.log("multiplication (*):", a * b);
 
-// console.log("division (/):", a / b);
+console.log("division (/):", a / b);
 
-// console.log("exponentiation (**):", a ** b); //raises the first operand to the power of the second operand.
+console.log("exponentiation (**):", a ** b); //raises the first operand to the power of the second operand.
 
-// console.log("modulas(%):", a % b); //for reminder
+console.log("modulas(%):", a % b); //for reminder
    
 
 
@@ -35,18 +35,18 @@
 
 // Displays the result
 
-// let marks = 100;
+let marks = 100;
 
-// marks++;  //post increment
-// console.log("After Increment the value: ", marks ) 
-// ++marks;   //pre increment
-// console.log( marks)
+marks++;  //post increment
+console.log("After Increment the value: ", marks ) 
+++marks;   //pre increment
+console.log( marks)
 
-// let num = 50;
-// num--;  //post dcrement
-// console.log("After decrement :", num)
-// --num; //pre decrement
-// console.log(num)
+let num = 50;
+num--;  //post dcrement
+console.log("After decrement :", num)
+--num; //pre decrement
+console.log(num)
 
 
 
