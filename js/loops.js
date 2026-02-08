@@ -89,3 +89,14 @@
 // // for (let i = 1; i < 101; i = i+1) {
 // //   console.log(i);
 // // }
+
+
+
+
+// // for( let i=1; i<=3 ;i++){
+// //     console.log(`          Floor=${i}`)
+// //     for(let j=0;j<=5;j++)
+// //     //     string=string+"* ";
+// //     console.log( `Rooms=${j}`);
+// // }
+
