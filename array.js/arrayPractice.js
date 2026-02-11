@@ -36,3 +36,5 @@ let numbers=["19","94","58","95"];
 console.log(numbers);
  numbers.pop();                                                         
 console.log(numbers);
+
+// ----------------------------------------
