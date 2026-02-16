@@ -32,9 +32,14 @@
 // console.log(numbers);
 
 // REMOVING A LAST ELEMENT FROM THE ARRAY---------------------------------
-let numbers=["19","94","58","95"];
-console.log(numbers);
- numbers.pop();                                                         
-console.log(numbers);
+// let numbers=["19","94","58","95"];
+// console.log(numbers);
+//  numbers.pop();                                                         
+// console.log(numbers);
 
-// ----------------------------------------
+// ----------------------------------------INDEXOF------------------
+let fruits = ["Apple", "Banana", "Mango"];
+
+let position = fruits.indexOf("Mango");
+
+console.log(position);

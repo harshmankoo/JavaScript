@@ -1,14 +1,14 @@
 // // // 1. ARITHMETIC OPERATORS (The Math)
 
-var a = 10;
-var b = 3;
+// var a = 10;
+// var b = 3;
 
-console.log("Addition (+):",       a + b);
-console.log("Subtraction (-):",    a - b);
-console.log("Multiplication (*):", a * b);
-console.log("Division (/):",       a / b);
-console.log("Exponentiation (**):", b ** a);
-console.log("Modulus (%):", a % b);
+// console.log("Addition (+):",       a + b);
+// console.log("Subtraction (-):",    a - b);
+// console.log("Multiplication (*):", a * b);
+// console.log("Division (/):",       a / b);
+// console.log("Exponentiation (**):", b ** a);
+// console.log("Modulus (%):", a % b);
 
 // TASK
 
@@ -102,7 +102,7 @@ console.log("Modulus (%):", a % b);
 // // /* ===============================
 // //    7. Parentheses Control Math
 // // ================================ */
-// // console.log("Total: " + (10 + 5));
+// console.log("Total: " + (10 + 5));
 
 // // //    8. Operator Behavior (Interview)
 // // console.log(10 + "5");   // 105
@@ -129,3 +129,11 @@ console.log("Modulus (%):", a % b);
 // // var a = 10;
 // // var b = "10";
 // // console.log(a != b)
+
+// console.log(a)
+// console.log(b)
+console.log(c)
+
+var a = 10 ;
+let b = 20 ;
+const c = 30;
