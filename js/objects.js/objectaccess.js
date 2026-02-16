@@ -263,6 +263,9 @@ const weatherAPI = {
 console.log(weatherAPI.data.location.city)
 console.log(weatherAPI.data.forecast[1].temp)
 console.log(weatherAPI.data.forecast[2].conditions)
-console.log(Object.keys(weatherAPI));
-console.log(Object.keys(weatherAPI.data.location))
+
+
+
+console.log(Object.keys(weatherAPI.data.location));
+console.log(Object.keys(weatherAPI.data.forecast[1]))
 console.log(Object.keys(weatherAPI.data.forecast[2]))
