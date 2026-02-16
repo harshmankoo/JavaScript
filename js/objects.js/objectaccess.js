@@ -252,12 +252,17 @@ const weatherAPI = {
             { day: "Wednesday", temp: 15, conditions: "Rain" }
         ]
     }
+    
 };
 // Your Goal:
 // Print the city name.
 // Print the temp for Tuesday.
 // Print the conditions for Wednesday.
 
+
 console.log(weatherAPI.data.location.city)
 console.log(weatherAPI.data.forecast[1].temp)
 console.log(weatherAPI.data.forecast[2].conditions)
+console.log(Object.keys(weatherAPI));
+console.log(Object.keys(weatherAPI.data.location))
+console.log(Object.keys(weatherAPI.data.forecast[2]))
