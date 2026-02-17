@@ -1,4 +1,3 @@
-
 // // -----------------------------------------------------
 // let a= [
 //   {
@@ -236,36 +235,163 @@
 // console.log(a[9].address.geo.lng)
 // console.log(a[3].company.bs)
 
-
-
 const weatherAPI = {
-    status: "success",
-    lastUpdated: "12:55 PM",
-    data: {
-        location: {
-            city: "Ludhiana",
-            country: "India"
-        },
-        forecast: [
-            { day: "Monday", temp: 22, conditions: "Sunny" },
-            { day: "Tuesday", temp: 18, conditions: "Cloudy" },
-            { day: "Wednesday", temp: 15, conditions: "Rain" }
-        ]
-    }
-    
+  status: "success",
+  lastUpdated: "12:55 PM",
+  data: {
+    location: {
+      city: "Ludhiana",
+      country: "India",
+    },
+    forecast: [
+      { day: "Monday", temp: 22, conditions: "Sunny" },
+      { day: "Tuesday", temp: 18, conditions: "Cloudy" },
+      { day: "Wednesday", temp: 15, conditions: "Rain" },
+    ],
+  },
 };
 // Your Goal:
 // Print the city name.
 // Print the temp for Tuesday.
 // Print the conditions for Wednesday.
 
+// console.log("City :", weatherAPI.data.location.city);
+// console.log("Temp :", weatherAPI.data.forecast[1].temp);
+// console.log("condition :", weatherAPI.data.forecast[2].conditions);
 
-console.log("City :",weatherAPI.data.location.city)
-console.log("Temp :", weatherAPI.data.forecast[1].temp)
-console.log("condition :",weatherAPI.data.forecast[2].conditions)
+for (const  z in weatherAPI.data.location) {
+ console.log(`${z}: ${weatherAPI.data.location[z]}`)
 
+  for( const x in weatherAPI.data.forecast[1].temp)
+    console.log(`${x}: ${weatherAPI.data.forecast[1].temp}`)
+}
 
-console.log(Object.keys(weatherAPI.data.location));
-console.log(Object.keys(weatherAPI.data.forecast[1]));
-console.log(Object.keys(weatherAPI.data.forecast[2]));
+// console.log(Object.keys(weatherAPI.data.location));
+// console.log(Object.keys(weatherAPI.data.forecast[1]));
+// console.log(Object.keys(weatherAPI.data.forecast[2]));                                  // only for key accessing
 
+// console.log(weatherAPI.data.location);
+// console.log(weatherAPI.data.forecast[1]);                                                //key and value acessing
+// console.log(weatherAPI.data.forecast[2])
+
+// -----------------------------------------------------------------------------------------------
+// Print the student name.
+
+// Print the student age.
+
+// Change the course to "BCA".
+
+// Add a new property city with value "Amritsar".
+
+// Print the full object.
+
+// let student = {
+//   name: "Harsh",
+//   age: 20,
+//   course: "MCA",
+//   isEnrolled: true,
+// };
+// console.log(student.name);
+// console.log(student.age);
+// student.course = "BCA";
+// console.log(student.course);
+// student.city = "Amritsar"; //   Adding a new key + value
+
+// console.log(student);
+// ---------------------------------------------------
+
+// Print the first skill.
+
+// Print the last skill.
+
+// Add "NodeJS" to the skills array.
+
+// Remove "CSS" from the skills array.
+
+// Print all skills using a loop.
+
+// let user = {
+//   username: "coder123",
+//   skills: ["HTML", "CSS", "JavaScript", "React"],
+//   active: true,
+// };
+// console.log(user.skills[0]);
+// console.log(user.skills[3]);
+// // user.skills="Nodejs";
+// delete user.skills[1];
+// user.skills[1] = null;
+// console.log(user);
+
+// for (let i = 0; i <= user.skills.length; i++) {
+//   console.log(user.skills[i]);
+// }
+
+// ------------------------------------------------------------------------
+
+// Print employee city.
+
+// Print employee pincode.
+
+// Change city to "Mumbai".
+
+// Add a new property country: "India" inside address.
+
+// Print full address object.
+
+// let employee = {
+//   id: 101,
+//   name: "Rahul",
+//   salary: 50000,
+//   address: {
+//     city: "Delhi",
+//     state: "Maharastra",
+//     pincode: 110001,
+//   },
+// };
+
+// console.log(employee.address.city);
+// console.log(employee.address.pincode);
+// employee.address.city = "Mumbai";
+// console.log(employee.address.city);
+// employee.address.country = "India";
+// console.log(employee);
+// console.log(employee.address);
+
+// ------------------------------------------------------------------
+// Print the company name.
+
+// Print name of first employee.
+
+// Print second skill of Rohit.
+
+// Add a new skill "MongoDB" to Sneha.
+
+// Print all employee names.
+
+// Print all skills of all employees using loop.
+
+// let company = {
+//   name: "TechSoft",
+//   location: "Bangalore",
+//   employees: [
+//     {
+//       id: 1,
+//       name: "Rohit",
+//       skills: ["JS", "React", "Node"],
+//     },
+//     {
+//       id: 2,
+//       name: "Sneha",
+//       skills: ["Python", "Django", "SQL"],
+//     },
+//   ],
+// };
+
+// console.log(company.name);
+// console.log(company.employees[0].name);
+// console.log(company.employees[1].skills);
+// company.employees[0].skills[3] = "MongoDB";
+// console.log(company.employees[0]);
+// for (let employee of company.employees) {
+//   console.log(employee.name);
+// }
