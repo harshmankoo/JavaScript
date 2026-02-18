@@ -1,8 +1,8 @@
 / // //    1. ARRAY CREATION
 
-const arr = [];
-const arr1 = [1, 2, 3, 4, 5];
-console.log(`Array 1 for array funtions`,arr1)
+// const arr = [];
+// const arr1 = [1, 2, 3, 4, 5];
+// console.log(`Array 1 for array funtions`,arr1)
 // From string to array
 // const arr2 = Array.from("Guri");    
 // console.log(arr2)
