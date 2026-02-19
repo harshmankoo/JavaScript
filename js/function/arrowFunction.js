@@ -7,78 +7,105 @@
 // //     // lines of code
 // // }
 
-
-// // if (true) {
-// //     repeatCode()
-// // }
-
-// // for (let i = 0; i < 5; i++) {
-// //     repeatCode()
-// // }
-
-
-// // function repeatCode(){
-// //     console.log("first");
-// //     console.log("second");
-// //     console.log("third");
-// //     console.log("fourth");
-// //     console.log("fifth");
-// // }
-
-
-
-
-
-
-// // 1. Function Definition - ()
-// // 2. function Call
-// // 3. Function Reference
-
-// // function xyz(){
-// //     console.log("1000 lines of Code...");
-// // }
-
-
-// // xyz() // Function Call
-
-
-// // xyz
-
-// // function abc(){
-// //     console.log("1000 lines of Code...");
-// // }
-
-// // const abc = xyz
-// // console.log(abc);
-
-
-
-
-// // 4. return Keyword
-
-// // function xyz(){
-// //     const age = 45
-// //     console.log("age is ",age);
-
-// //     // return "Hi this is Jagjot"
-// //     return [45,35,36,25]
-// // }
-
-// // const returnedByXyz = xyz()
-// // console.log("returned : ",returnedByXyz);
-
-// // console.log(xyz());
-
-
-
-
-// // 5. Arguments and Parameters
-
-
-// // Arguments - Data which we pass to a function while calling it
-// // Parameters - Variables which we use to access the arguments in funciton
-
-// function name(Parameters){
-
+// function functionName(num1 , num2) {
+//  console.log(num1 + num2);
+//     return num1 + num2
 // }
-// name(Arguments)
+// functionName(2,3)
+
+// const  functionName = (num) => {
+//   if (num % 2 === 0){
+//     return "even"
+//   } else {
+//     return "odd"
+//   }
+// }
+
+// console.log(functionName(300000000001));
+
+
+
+
+
+// ---------------------------------------------------------------------------------------------------------
+// ✅ Task 1: Add Two Numbers
+
+// Create an arrow function that takes two numbers and returns their sum.
+
+const add =(num1 , num2 )=>{
+    return num1 + num2;
+}
+console.log( add(2,3));
+
+
+// --------------------------------------------------------------------------------------------------------------
+// Create an arrow function that takes one number and returns its square.
+// square(4) → 16
+  
+const number=(num)=>{
+return num * num 
+}
+console.log(number(4))
+
+// ---------------------------------------------------------------------------------------------------------------
+// ✅ Task 3: Greet User
+
+// Create an arrow function that takes a name and returns:
+
+ const mainName=(user)=>{
+            return `Hello , ${user}`
+ }
+ let backname = mainName;
+ console.log (backname("Harshdeep Singh"));
+
+//  -------------------------------------------------------------------------------
+// ✅ Task 4: Check Even or Odd
+
+// Create an arrow function that returns:
+
+// "Even" if number is even
+
+// "Odd" if number is odd
+
+const checknum=(num)=>{
+    if (num/2===0){
+        return "The Number is Even"
+    }
+
+    else{
+        return "The Number is Odd"
+    }
+}
+
+let abc = checknum
+console.log(abc(10))
+
+// --------------------------------------------------------------------------------------
+// ✅ Task 5: Find Largest Number
+
+// Create an arrow function that takes two numbers and returns the larger one.
+
+const largernum =(num1,num2)=>{
+    if(num1 >num2) {
+        return (num1 + "is a larger number")
+    }else{
+       return (num2 + "is a lager number")
+    }
+}
+console.log(largernum(25,35))
+// --------------------------------------------------------------------------------------
+// ✅ Task 7: Filter Even Numbers
+
+// Given an array:
+
+ const numbers = [1, 2, 3, 4, 5, 6]
+
+
+// Use an arrow function to return only even numbers.
+
+const task = numbers.filter((pen)=>{
+
+        return pen % 2===0;
+    
+});
+console.log(task);

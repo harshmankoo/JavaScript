@@ -14,7 +14,22 @@ console.log(result);                                                  // it let 
 // ------------------------------------------------------------------------------------------------------------------
 
 
+
+
+
+
+
+
 // converting strings into Array
+
+
+
+
+
+
+
+
+
 var text = "Hello World JavaScript";
 
 var result = text.split(" ");
