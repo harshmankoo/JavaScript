@@ -50,10 +50,7 @@ colorBtn.addEventListener("click", ()=> {
 // ===========================================================================================================
 
 // ==========================================
-// THE CREATOR (Experienced Level)
-// ==========================================
-// Goal: Create brand new HTML elements out of thin air and add them to the page.
-// This is exactly how React works under the hood!
+/.
 
 console.log("\n--- Level 4: Creating Elements ---");
 
@@ -65,7 +62,7 @@ const taskList = document.getElementById("task-list");
 
 addBtn.addEventListener("click", () => {
 //     // 1. Get the text the user typed
-    const taskText = taskInput.value;
+    // const taskText = taskInput.value;
 
 //     // Guard clause: Don't add empty tasks
     if (taskText === "") {
