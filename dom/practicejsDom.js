@@ -62,7 +62,7 @@ clickadd.addEventListener("click", () => {
 
     newlistitem.innerText = tasktext ;
 
-    taskList.appendChild(newlistitem);
+    addlists.appendChild(newlistitem);
 
-    taskInput.value = "";
+    contentdata.value = "";
 });
