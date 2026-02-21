@@ -31,11 +31,6 @@ changecolorbtn.addEventListener("click", () => {
 const inputalert = document.getElementById("user-input");
 const buttonalert = document.getElementById("btn-3");
 
-buttonalert.addEventListener("click", () => {
-    const value = inputalert.value;                   //  its read the input value
-    alert(value);                                       //   it show the input value
-});
-
 // ==================================================================================================/
 
 // • The Link Update
@@ -43,25 +38,24 @@ buttonalert.addEventListener("click", () => {
 // When btn-4 is clicked, change the link's href attribute to "https://youtube.com" and its text to "Go to YouTube".
 
 const youtubelink = document.getElementById("my-link");
-const youtubebtn = document.getElementById("btn-4")
+const youtubebtn = document.getElementById("btn-4");
 
-youtubebtn.addEventListener( "click" ,()=>
-{
-    youtubelink.href ="https://youtube.com";
-    youtubelink.innerText = "Go to Youtube"
-})
+youtubebtn.addEventListener("click", () => {
+  youtubelink.href = "https://youtube.com";
+  youtubelink.innerText = "Go to Youtube";
+});
 
 // =========================================================================================
 // • The Vanishing Image
 // Select the image my-image.
 // When btn-5 is clicked, change its style.display to "none" so it disappears.
 
-const imagebtn = document.getElementById("btn-5")
-const imagedisappear = document.getElementById("my-image")
+const imagebtn = document.getElementById("btn-5");
+const imagedisappear = document.getElementById("my-image");
 
-imagebtn.addEventListener( "click" , ()=> {
-    imagedisappear.style.display = "none"
-})
+imagebtn.addEventListener("click", () => {
+  imagedisappear.style.display = "none";
+});
 
 // =============================================================================================
 // • The Counter (+ and -)
@@ -70,6 +64,22 @@ imagebtn.addEventListener( "click" , ()=> {
 // When dec-btn is clicked, decrease the number by 1.
 // Hint: You will need to convert the text to a number using parseInt() or Number().
 
+let countervalue = document.getElementById("counter-value");
+let increasebutn = document.getElementById("inc-btn");
+let decreasebtn = document.getElementById("dec-btn");
+
+increasebutn.addEventListener("click", () => {
+  let current = countervalue.innerText;
+  let numberValue = Number(current);
+  numberValue++;
+  countervalue.innerText = numberValue;
+});
+decreasebtn.addEventListener("click", () => {
+  let current = countervalue.innerText;
+  let numberValue = Number(current);
+  numberValue--;
+  countervalue.innerText = numberValue;
+});
 
 // ===========================================================================================
 
@@ -77,11 +87,10 @@ imagebtn.addEventListener( "click" , ()=> {
 // Select the button toggle-mode.
 // When clicked, toggle the CSS class "dark-mode" on the document.body.
 
-const darkmoodbtn = document.getElementById("toggle-mode")
+const darkmoodbtn = document.getElementById("toggle-mode");
 
-darkmoodbtn.addEventListener("click", ()=>
-{
-   document.body.classList.toggle("dark-mode")                 // classList is a property in JavaScript that allows you to work with CSS classes of an HTML element.
+darkmoodbtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode"); // classList is a property in JavaScript that allows you to work with CSS classes of an HTML element.
 });
 
 // ==============================================================================================
@@ -91,24 +100,54 @@ darkmoodbtn.addEventListener("click", ()=>
 // When clicked, check if the password is less than 5 characters.
 // If it is too short, show the text "Password too short!" in the error-msg paragraph.
 
-const passworddata = document.getElementById("password-input")
-const loginbutton = document.getElementById("login-btn")
-const errordata = document.getElementById("error-msg")
+const passworddata = document.getElementById("password-input");
+const loginbutton = document.getElementById("login-btn");
+const errordata = document.getElementById("error-msg");
 
-loginbutton.addEventListener("click" , ()=>{
-   let value = passworddata.value
-    if (value.length < 5 ) {
-        errordata.innerHTML = "Password too short!"
-    
-}
-})
+loginbutton.addEventListener("click", () => {
+  let value = passworddata.value;
+  if (value.length < 5) {
+    errordata.innerHTML = "Password too short!";
+  }
+});
 
 // =================================================================================================
 
-• The Shopping List (Create Elements)
-Select item-input, add-item-btn, and the ul shopping-list.
-When clicked, take the text from the input, create a new <li> element, set its text, and appendChild it to the list.
-
+// • The Shopping List (Create Elements)
+// Select item-input, add-item-btn, and the ul shopping-list.
+// When clicked, take the text from the input, create a new <li> element, set its text, and appendChild it to the list.
 
 const shoplist = document.getElementById("shopping-list");
-const itemdata = document
+const itemdata = document.getElementById("item-input");
+const itemaddbutton = document.getElementById("add-item-btn");
+
+itemaddbutton.addEventListener("click", () => {
+  let value = itemdata.value;
+  const newlistitem = document.createElement("li");
+  newlistitem.innerText = value;
+  shoplist.appendChild(newlistitem);
+});
+
+// ============================================================================
+// • The Toggle "Show/Hide" Button
+// Select secret-msg and toggle-msg-btn.
+// When clicked, check if the message is visible.
+// If visible -> Hide it and change button text to "Show Message".
+// If hidden -> Show it and change button text to "Hide Message".
+
+const secretmessage = document.getElementById("secret-msg");
+const togglemessagebutton = document.getElementById("toggle-msg-btn");
+
+togglemessagebutton.addEventListener("click", () => {
+  if (secretmessage.classList.contains("hidden")) {
+    // secretmessage.classList.add("hidden")
+    secretmessage.classList.remove("hidden");
+    togglemessagebutton.innerText = "hide Message";
+  } else {
+    // secretmessage.classList.remove("hidden")
+    secretmessage.classList.add("hidden");
+    togglemessagebutton.innerText = "show message";
+  }
+});
+
+// ====================================================================================
