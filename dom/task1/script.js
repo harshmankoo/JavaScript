@@ -24,13 +24,18 @@ changecolorbtn.addEventListener("click", () => {
 });
 
 // ===========================================================================================
-// • The Input Reader
+// • The Input Reader 
 // Select the input user-input and the button btn-3.
 // When clicked, read the value from the input and show it in a standard browser alert().
 
 const inputalert = document.getElementById("user-input");
 const buttonalert = document.getElementById("btn-3");
 
+buttonalert.addEventListener("click" , ()=>{
+  let value = inputalert.value;
+  alert(value)
+}
+)
 // ==================================================================================================/
 
 // • The Link Update
@@ -102,7 +107,7 @@ darkmoodbtn.addEventListener("click", () => {
 
 const passworddata = document.getElementById("password-input");
 const loginbutton = document.getElementById("login-btn");
-const errordata = document.getElementById("error-msg");
+const errordata = document.getElementById("error-msg");zz
 
 loginbutton.addEventListener("click", () => {
   let value = passworddata.value;

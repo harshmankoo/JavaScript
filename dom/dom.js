@@ -50,7 +50,7 @@ colorBtn.addEventListener("click", ()=> {
 // ===========================================================================================================
 
 // ==========================================
-/.
+
 
 console.log("\n--- Level 4: Creating Elements ---");
 
@@ -67,7 +67,7 @@ addBtn.addEventListener("click", () => {
 //     // Guard clause: Don't add empty tasks
     if (taskText === "") {
         alert("Please enter a task!");
-        return;.
+        return;
     }
 
 //     // 2. CREATE a brand new <li> tag
