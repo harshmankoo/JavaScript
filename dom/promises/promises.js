@@ -235,7 +235,6 @@ const calculator = (num) => {
    })
    multiply()
 }
-
 const multiply = (num) => {
    return new Promise((resolve, reject) => {
       setInterval(() => {
@@ -314,3 +313,5 @@ console.log(`the number is ${num}`);
 // }).catch((error) => {
 //     console.log(error)
 // });
+
+
