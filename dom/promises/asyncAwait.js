@@ -54,23 +54,38 @@
 // })();
 // ==============================================================================================================
 
-async function harry( ) {
-let delhiWeather = new Promise((resolve, reject) => {
-setTimeout(() => {
-resolve("27 Deg")
-}, 1000)
+// async function harry( ) {
+// let delhiWeather = new Promise((resolve, reject) => {
+// setTimeout(() => {
+// resolve("27 Deg")
+// }, 1000)
 
-})
+// })
 
-let bangaloreWeather = new Promise((resolve, reject) => {
-setTimeout(() => {
-resolve("21 Deg")
+// let bangaloreWeather = new Promise((resolve, reject) => {
+// setTimeout(() => {
+// resolve("21 Deg")
 
-}, 2000)
-})
-delhiWeather. then(alert)
-delhiWeather. then(alert)
-I}
+// }, 2000)
+// })
+// delhiWeather. then(alert)
+// delhiWeather. then(alert)
+// I}
 
-console. log("Welcome to weather control room")
-harry()
+// console. log("Welcome to weather control room")
+// harry()
+// ================================================================================================
+
+// functionz();
+
+async function getData() {
+try E
+const response - await fetch("https://jsonplaceholder.typicode.com/posts/1");
+const data = await response. json();
+console.log(data);
+catch (error) {
+console.error("Error:", error);
+
+getData();
+
+...
